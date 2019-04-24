@@ -14,9 +14,9 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 app.use(cors());
 
-// app.get('/', (req, res) => {
-//   res.send('test');
-// })
+app.get('/', (req, res) => {
+  res.send('test');
+})
 
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
