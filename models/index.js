@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // mongoose.Promise = Promise
 
-mongoose.connect('mongodb://localhost/battle-buddy-BE',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/battle-buddy-BE',
   { useNewUrlParser: true })
 
 module.exports = {
