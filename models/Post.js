@@ -39,4 +39,4 @@ const PostSchema = new Schema({
   isEvent: Boolean
 });
 
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model("post", PostSchema);
