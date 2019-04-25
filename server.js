@@ -24,8 +24,6 @@ app.use("/events", eventRoutes);
 app.use("/comments", commentRoutes);
 
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 3001, () =>
   console.log("Server is now running")
 );
-
-// || 3001,
