@@ -5,11 +5,11 @@ Schema = mongoose.Schema;
 const LikeSchema = new Schema({
   selectedUser: {
     type: Schema.Types.ObjectId,
-    ref: "User"
+    ref: "user"
   },
   currentUser: {
     type: Schema.Types.ObjectId,
-    ref: "User"
+    ref: "user"
   },
   Like: {
     type: Boolean,

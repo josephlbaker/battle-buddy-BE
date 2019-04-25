@@ -22,7 +22,7 @@ const PostSchema = new Schema({
   },
   user: {
     type: Schema.Types.ObjectId,
-    ref: "User"
+    ref: "user"
   },
   username: {
     type: String

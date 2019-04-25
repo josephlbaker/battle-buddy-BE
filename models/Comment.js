@@ -14,11 +14,11 @@ const CommentSchema = new Schema({
   },
   user: {
     type: Schema.Types.ObjectId,
-    ref: "User"
+    ref: "user"
   },
   post: {
     type: Schema.Types.ObjectId,
-    ref: "Post"
+    ref: "post"
   }
 });
 
