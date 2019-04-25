@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../models/Comment");
 
 module.exports = {
   index: (req, res) => {
